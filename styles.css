@@ -1,55 +1,64 @@
 body {
-    font-family: monospace;
-    font-size: default;
+
+    font-family: "Comic Sans MS";
+    border: 2px solid black;
 }
 
-span {
-    border-style: solid;
-    border-width: 2px thick;
-    float: left;
+
+.id{
+
+    background-color: yellow;
+    border: 2px solid black;
+
 }
 
-#div {
-    border: none;
-    text-align: center;
+div div:nth-child(2):not(div.id){
+
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+span.class {
+    
+    position: fixed;
+    top:  70px;
+
+    font-style: italic;
+}
+
+div.class {
+
+    position: relative;
+}
+
+div.class span{
+
+    float: right;
+}
+
+div.class div.id {
+
+    border: 2px solid black;
+    width: fit-content;
     background-color: yellow;
 }
 
-.div {
-    float: right;
-    width: max-content;
-    border-style: solid;
-    border-width: 2px thick;
-    padding-right: 15%;
-    padding-left: 26px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    
+#class {
+
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 87%;
 }
 
-span.div {
-    float: right;
-    width: max-content;
-    border-style: solid;
-    border-width: 2px thick;
-    padding-right: 17.5%;
-    
-}
+#H{
 
-#span {
-    clear: right;
-    float: right;
-    width: max-content;
-    border-style: solid;
-    border-width: 2px thick;
-    padding-right: 17.2%;
-    padding-left: 26px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.span {
-    clear: right;
-    text-align: center;
-    border-top: dotted;
+    border: 2px solid black;
+    text-align: right;
+    position: relative;
+    margin-left: 33.3%;
+    margin-right: 33.3%;
 }
